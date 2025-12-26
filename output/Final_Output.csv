@@ -1,0 +1,7 @@
+Taxon,likely_poaching_country,poaching_risk_score,Order,Family,Genus
+Alligator Mississippiensis,United States,0.8036490191174379,Crocodylia,Alligatoridae,Alligator
+Crocodylus Niloticus,Italy,1.0,Crocodylia,Crocodylidae,Crocodylus
+Crocodylus Porosus,France,0.8582841087964257,Crocodylia,Crocodylidae,Crocodylus
+Python Bivittatus,Italy,0.7246685951020374,Serpentes,Pythonidae,Python
+Python Reticulatus,Italy,0.9826084503493091,Serpentes,Pythonidae,Python
+Varanus Salvator,Italy,0.6422575027651867,Sauria,Varanidae,Varanus
