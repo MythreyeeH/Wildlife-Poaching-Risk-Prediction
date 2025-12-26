@@ -94,6 +94,29 @@ Scores are scaled to a **0.0 – 1.0 range** using Min–Max scaling.
 
 ---
 
+## Species Risk & Conservation Priority (CPI)
+
+The system aggregates transaction-level wildlife trade data into species-level indicators and combines them with model-derived risk scores to enable actionable conservation prioritization.
+
+### Key Indicators
+For each of the six target species, we compute:
+* **Mean Anomaly Risk**: Derived from machine learning models.
+* **Live Trade Ratio**: Proportion of trade involving live specimens.
+* **Mean CITES Appendix Severity**: Mapped value (III → I mapped as 1 → 3).
+* **Top Exporter Country**: Primary source of trade.
+
+### Conservation Priority Index (CPI)
+These indicators are unified into a **Conservation Priority Index (CPI)** using the following formula:
+
+$$CPI = Risk_{ML} \times Appendix_{Severity} \times (1 + 0.5 \cdot Live_{Ratio})$$
+
+* **CPI Range:** 0 – 4.5
+
+### Impact
+CPI preserves magnitude and converts anomaly detection outputs into a policy-relevant prioritization score, enabling clear comparison across species and identification of those requiring urgent conservation and enforcement attention.
+
+---
+
 ## Validation Strategy
 
 Because illegal poaching activity lacks labeled ground truth, validation is performed using **domain-driven evaluation** rather than standard supervised metrics.
